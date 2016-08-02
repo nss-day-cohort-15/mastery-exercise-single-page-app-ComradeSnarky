@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Lauren's Car Lot</title>
-    <link rel="stylesheet" type="text/css" href="/quizzes/spa/mastery-exercise-single-page-app-ComradeSnarky/bower_components/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="quiz.css">
-  </head>
-  <body>
-    <div class="container">
-      <nav class="navbar navbar-default">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </nav>
-    </div>
-    <script src="CarLot.js"></script>
-    <script src="quiz.js"></script>
-  </body>
+<head>
+  <title>Lauren's Random Cars</title>
+  <link href="/bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="quiz.css">
+</head>
+<body>
+  <div id="navContainer">
+    <nav class="navbar navbar-fixed-top container-fluid">
+      <div class="container-fluid input-group">
+        <input type="text" class="form-control" id="textInput">
+        <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Submit</button>
+        </span>
+      </div>
+    </nav>
+  </div>
+  <h1>Inventory:</h1>
+  <div id="carContainer" class="container cardContainer"> </div>
+
+  <script src="CarLot.js"></script>
+  <script src="events_activation.js"></script>
+  <script src="quiz.js"></script>
+  <script src="colors.js"></script>
+</body>
 </html>
