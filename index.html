@@ -2,26 +2,30 @@
 <html>
 <head>
   <title>Lauren's Random Cars</title>
-  <link href="/bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel= "stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="quiz.css">
 </head>
 <body>
-  <div id="navContainer">
-    <nav class="navbar navbar-fixed-top container-fluid">
-      <div class="container-fluid input-group">
-        <input type="text" class="form-control" id="textInput">
-        <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Submit</button>
-        </span>
-      </div>
-    </nav>
-  </div>
-  <h1>Inventory:</h1>
-  <div id="carContainer" class="container cardContainer"> </div>
-
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Lauren's Random Car Lot</a>
+        </div>
+      <div class="navbar-form navbar-left">
+       <div class="form-group">
+         <input type="text" id="userInput" class="form-control">
+       </div>
+       <button type="button" class="btn btn-default">Submit</button>
+     </div>
+   </div>
+ </nav>
+<div id="output">
+</div>
+ </div>
   <script src="CarLot.js"></script>
-  <script src="events_activation.js"></script>
   <script src="quiz.js"></script>
+  <script src="events_activation.js"></script>
   <script src="colors.js"></script>
 </body>
 </html>
